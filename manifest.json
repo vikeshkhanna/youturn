@@ -1,0 +1,30 @@
+{
+  "name": "YouTurn",
+  "version": "1.0",
+  "description": "Repeat YouTube videos automatically.",
+
+  "page_action": {
+    "default_icon": "icons/icon0.png",  
+    "default_title": "YouTurn"    
+  },
+  
+  "content_scripts" : [
+  {
+	 "matches": [
+        "*://*.youtube.com/*", "*://youtube.com/*"
+      ],
+	 "js" : ["contentscript.js"],
+	 "all_frames" : true,
+	 "run_at" : "document_start"
+  }],
+  
+  "background_page": "background.html",
+  "permissions": ["tabs"],
+   
+   "icons": {
+    "48": "icons/icon48.jpg",
+    "128": "icons/icon128.jpg",
+    "256": "icons/icon256.jpg"
+  }
+
+}
