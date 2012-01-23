@@ -13,7 +13,6 @@ var repeatState = RepeatState.NO_REPEAT; //default state - don't repeat
 
 function checkPlayerState()
 {
-	console.log("<youturn> Polling");
 	
 	if( repeatState == RepeatState.REPEAT)
 	{
@@ -53,7 +52,7 @@ function checkPlayer()
 	
 	flash = document.getElementById('movie_player');
 	html5 = document.querySelector('video.video-stream');
-	return html5 || flash;
+	return (html5 || flash);
 }
 
 function toggleRepeat(sendResponse)
