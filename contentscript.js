@@ -135,7 +135,7 @@ function init_layout()
 {
 	btn_post_fb = document.createElement('button');
 	btn_post_fb.type= "button";
-	btn_post_fb.className = "start yt-uix-tooltip-reverse yt-uix-button yt-uix-button-toggle yt-uix-tooltip";
+	btn_post_fb.className = "start yt-uix-tooltip-reverse  yt-uix-button yt-uix-button-default yt-uix-tooltip";
 	btn_post_fb.role = "button";
 	btn_post_fb.title = "Let people know you looped this song!";
 	btn_post_fb.style.margin = "10px 0px 10px 0px";
@@ -149,7 +149,7 @@ function init_layout()
 	img.src = icon0;
 	
 	var span = document.createElement('span')
-	span.style.className = 'class="yt-uix-button-content';
+	span.style.className = 'yt-uix-button-content';
 	span.innerHTML = "Share your YouTurn";
 	span.style.marginLeft = "5px";
 	span.style.marginTop = "3px";
