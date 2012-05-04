@@ -29,7 +29,9 @@ function checkPlayerState()
 		else if(flash && flash.getPlayerState() == 0) //ended
 		{
 				flash.seekTo(0, true);
+				flash.pauseVideo();
 				flash.playVideo();
+				
 		}
 	}
 	
