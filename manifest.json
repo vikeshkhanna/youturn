@@ -1,8 +1,7 @@
 {
   "name": "YouTurn",
-  "version": "2.1",
+  "version": "2.2",
   "description": "Repeat YouTube videos automatically.",
-
   "page_action": {
     "default_icon": "icons/icon0.png",  
     "default_title": "YouTurn"    
@@ -10,10 +9,10 @@
   
   "content_scripts" : [
   {
-	 "matches": [
+	"matches": [
         "*://*.youtube.com/*", "*://youtube.com/*"
       ],
-	 "js" : [ "js/jquery.js", "js/fb.js" , "contentscript.js"],
+	 "js" : [ "js/jquery.js", "contentscript.js"],
 	 "all_frames" : true,
 	 "run_at" : "document_start"
   }],
