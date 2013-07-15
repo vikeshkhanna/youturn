@@ -1,7 +1,9 @@
-{
+{ 
   "name": "YouTurn",
   "version": "2.2",
+  "manifest_version":2,
   "description": "Repeat YouTube videos automatically.",
+  
   "page_action": {
     "default_icon": "icons/icon0.png",  
     "default_title": "YouTurn"    
@@ -17,7 +19,10 @@
 	 "run_at" : "document_start"
   }],
   
-  "background_page": "background.html",
+  "background": {
+  	"scripts": ["js/background.js"]
+  },
+
   "permissions": ["tabs"],
    
    "icons": {
