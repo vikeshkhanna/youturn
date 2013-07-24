@@ -19,7 +19,7 @@ function checkPlayerState()
 {
 	if( repeatState == RepeatState.REPEAT)
 	{
-		if(html5 && html5.currentTime == html5.duration) 
+		if (html5 && html5.currentTime == html5.duration) 
 		{
 				html5.play();
 		}
@@ -52,8 +52,15 @@ function handleTimeout()
 //Timer based event to get reference to player - onYouTubeReady not working for some reason
 function checkPlayer()
 {
-	flash = document.getElementById('movie_player');
+	movie_player = document.getElementById('movie_player');
+	
+	if(movie_player && movie_player.type!=undefined && movie_player.type.indexOf("flash")!=-1)
+	{
+		flash = movie_player;
+	}
+	
 	html5 = document.querySelector('video.video-stream');
+	
 	return (flash || html5);
 }
 
